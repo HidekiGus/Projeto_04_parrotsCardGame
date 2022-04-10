@@ -1,0 +1,51 @@
+body {
+    background-color: #eef9bf;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 66px;
+    font-family: 'Roboto';
+    color: #75b79e;
+    margin: 40px auto;
+}
+
+.tabuleiro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    background-color: #eef9bf;
+}
+
+.carta {
+    background-color: red;
+    border: 1px solid #99cea8;
+    width: 117px;
+    height: 146px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 17px;
+    background: url(/imagens/front.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 614px) {
+    h1 {
+        font-size: 36px;
+        flex-wrap: wrap;
+        display: flex;
+        text-align: center;
+    }
+}
